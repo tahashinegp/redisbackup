@@ -21,5 +21,5 @@ EOF
     wait $i
     fi
     cp "$REDISCONFIGDIR"/dump.rdb "$DEST"/dump."$DIR".rdb
-    aws s3 cp "$DEST"/dump."$DIR".rdb s3://portwestredisdbbackup/"$DIR"/dump_"$DIR".rdb
+    aws s3 cp "$DEST"/dump."$DIR".rdb s3://<Bucket_Name/"$DIR"/dump_"$DIR".rdb
 
